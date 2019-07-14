@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mainmenu"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".game_over">
+
+    <TextView
+        android:id="@+id/lblGameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lblMargin"
+        android:layout_weight="3"
+        android:contentDescription="@string/lblGameOver"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center|top"
+        android:text="@string/lblGameOver"
+        android:textColor="@color/colorLbls"
+        android:textSize="@dimen/lblTextSize" />
+
+    <TextView
+        android:id="@+id/lblNewHighScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lblMargin"
+        android:layout_weight="0"
+        android:contentDescription="@string/lblHighScorer"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center|top"
+        android:text="@string/lblNewHighScorer"
+        android:textColor="@color/colorLbls"
+        android:textSize="@dimen/lblHighScoreTextSize" />
+
+    <TextView
+        android:id="@+id/lblHighScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:contentDescription="@string/lblHighScorer"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center|top"
+        android:text="@string/lblHighScorer"
+        android:textColor="@color/colorLbls"
+        android:textSize="@dimen/lblHighScoreTextSize" />
+
+    <TextView
+        android:id="@+id/lblYourScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/btnMarginBottom"
+        android:layout_weight="0"
+        android:contentDescription="@string/lblYourScorer"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center|top"
+        android:text="@string/lblYourScorer"
+        android:textColor="@color/colorLbls"
+        android:textSize="@dimen/lblScoreTextSize" />
+
+    <Button
+        android:id="@+id/btnTryAgain"
+        android:layout_width="@dimen/btnTryAgainWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/btnMarginBottom"
+        android:background="@drawable/btn_gradient"
+        android:contentDescription="@string/btnTryAgain"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/btnTryAgain"
+        android:textColor="@color/colorBtns"
+        android:textSize="@dimen/btnTextSize" />
+
+    <Button
+        android:id="@+id/btnMainMenu"
+        android:layout_width="@dimen/btnTryAgainWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/btnMarginBottom"
+        android:background="@drawable/btn_gradient"
+        android:contentDescription="@string/btnMainMenu"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/btnMainMenu"
+        android:textColor="@color/colorBtns"
+        android:textSize="@dimen/btnTextSize" />
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_gradient"
+        android:contentDescription="@string/btnQuit"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/btnQuit"
+        android:textColor="@color/colorBtns"
+        android:textSize="@dimen/btnTextSize" />
+
+</LinearLayout>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".splashscreen">
+
+    <ImageView
+        android:id="@+id/imgTitle"
+        android:layout_width="@dimen/imgTitleLayoutWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/lblMargin"
+        android:layout_weight="3"
+        android:contentDescription="@string/imgShip"
+        app:srcCompat="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/lblTitle"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:text="@string/lblTitle"
+        android:textColor="@color/colorBtns"
+        android:textSize="@dimen/lblTextSize" />
+
+    <TextView
+        android:id="@+id/lblCreator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lblMargin"
+        android:layout_weight="1"
+        android:contentDescription="@string/lblCreator"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center|top"
+        android:text="@string/lblCreator"
+        android:textColor="@color/colorBtns"
+        android:textSize="@dimen/lblCreatorTextSize" />
+
+</LinearLayout>

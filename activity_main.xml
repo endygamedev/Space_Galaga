@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mainmenu"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lblMargin"
+        android:layout_weight="4"
+        android:contentDescription="@string/lblTitle"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center|top"
+        android:text="@string/lblTitle"
+        android:textColor="@color/colorLbls"
+        android:textSize="@dimen/lblTextSize" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/btnMarginBottom"
+        android:background="@drawable/btn_gradient"
+        android:contentDescription="@string/btnPlay"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/btnPlay"
+        android:textColor="@color/colorBtns"
+        android:textSize="@dimen/btnTextSize" />
+
+    <Button
+        android:id="@+id/btnTutorial"
+        android:layout_width="@dimen/btnTutorialWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/btnMarginBottom"
+        android:background="@drawable/btn_gradient"
+        android:contentDescription="@string/btnTutorial"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/btnTutorial"
+        android:textColor="@color/colorBtns"
+        android:textSize="@dimen/btnTextSize" />
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_gradient"
+        android:contentDescription="@string/btnQuit"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/btnQuit"
+        android:textColor="@color/colorBtns"
+        android:textSize="@dimen/btnTextSize" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space_background"
+    android:orientation="vertical"
+    tools:context=".game">
+
+    <TextView
+        android:id="@+id/lblScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lblScoreMargin"
+        android:layout_marginTop="@dimen/lblScoreMargin"
+        android:contentDescription="@string/lblScore"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/lblScore"
+        android:textColor="@color/colorLbls"
+        android:textSize="@dimen/lblScoreTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtnPause"
+        android:layout_width="@dimen/imgBtnPauseXY"
+        android:layout_height="@dimen/imgBtnPauseXY"
+        android:layout_marginStart="@dimen/lblScoreMargin"
+        android:layout_marginTop="@dimen/lblScoreMargin"
+        android:alpha="@dimen/imgBtnAlpha"
+        android:background="@drawable/btn_gradient"
+        android:contentDescription="@string/imgBtnPause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblScore"
+        app:srcCompat="@drawable/pause" />
+
+    <LinearLayout
+        android:id="@+id/HeartUILayoutGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/imgHeartsUIMagrin"
+        android:layout_marginEnd="@dimen/imgHeartsUIMagrin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgHeartUI3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:contentDescription="@string/imgHeart"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/imgHeartUI2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:contentDescription="@string/imgHeart"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/imgHeartUI1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:contentDescription="@string/imgHeart"
+            app:srcCompat="@drawable/heart" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="69dp">
+
+        <ImageView
+            android:id="@+id/imgShip"
+            android:layout_width="@dimen/imgShipSize"
+            android:layout_height="@dimen/imgShipSize"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="624dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/anim_ship" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mainmenu"
+    android:orientation="vertical"
+    tools:context=".tutotial">
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lblMargin"
+        android:layout_marginBottom="@dimen/btnMarginBottom"
+        android:layout_weight="0"
+        android:contentDescription="@string/webImgTutorial"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center|top"
+        android:text="@string/webImgTutorial"
+        android:textColor="@color/colorLbls"
+        android:textSize="@dimen/lblTextSize" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webTutorial"
+                android:layout_width="@dimen/webImgTutorialWidth"
+                android:layout_height="@dimen/webImgTutorialHeight"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btnTutorial" >
+
+            </WebView>
+
+            <TextView
+                android:id="@+id/lblTutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btnMarginBottom"
+                android:layout_marginBottom="@dimen/btnMarginBottom"
+                android:layout_weight="0"
+                android:contentDescription="@string/btnTutorial"
+                android:fontFamily="@font/fredoka_one"
+                android:gravity="center"
+                android:text="@string/lblTutorial"
+                android:textColor="@color/colorLbls"
+                android:textSize="@dimen/lblHighScoreTextSize" />
+
+            <WebView
+                android:id="@+id/webRotate"
+                android:layout_width="@dimen/webImgTutorialWidth"
+                android:layout_height="@dimen/webImgTutorialHeight"
+                android:layout_gravity="center"
+                android:contentDescription="@string/btnTutorial">
+
+            </WebView>
+
+            <Button
+                android:id="@+id/btnMainMenu"
+                android:layout_width="@dimen/btnTryAgainWidth"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/btnMarginBottom"
+                android:layout_marginBottom="@dimen/lblMargin"
+                android:background="@drawable/btn_gradient"
+                android:contentDescription="@string/btnMainMenu"
+                android:fontFamily="@font/fredoka_one"
+                android:text="@string/btnMainMenu"
+                android:textColor="@color/colorBtns"
+                android:textSize="@dimen/btnTextSize" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
