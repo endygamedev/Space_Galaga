@@ -1,3 +1,4 @@
-# Space Galaga
-Game in Android Studio.
-Here you can check my Java-code and some layouts, animations in game "Space Galaga".
+# 👾 Space Galaga
+Игра была сделана в Android Studio.
+Тут ничего нет кроме грустного Java кода 😟 и немного лэйаутов.
+Хранилище плохого кода и детского стыда.
